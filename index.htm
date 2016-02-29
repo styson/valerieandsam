@@ -8,11 +8,11 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div id="navbar"></div>
-  <div class="container">
-    <div id="main" class="hero-unit"></div>
-    <hr>
-  </div>
+<div id="navbar"></div>
+<div class="container">
+  <div id="main" class="hero-unit"></div>
+  <hr>
+</div>
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@ $(document).ready(function() {
     $("#main").load(tag+".htm");
   });
 
-  $("#navbar .dropdown-menu li").click(function() {
+  $("#navbar .dropdown-menu li").on("click", function() {
     var tag = $(this).data("tag");
     console.log(tag);
     $("#main").load(tag+".htm");

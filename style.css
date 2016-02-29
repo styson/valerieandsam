@@ -1,0 +1,233 @@
+<style type="text/css">
+  body {
+    font-family:verdana,geneva,helvetica,arial,sans-serif;
+    text-align:justify;
+  }
+
+  p, li, td
+  {
+    text-align:justify;
+    vertical-align:top;
+  }
+
+	div {
+		float:clear-left;
+    padding:.2em 0 .2em 0;
+    margin:.2em;
+  }
+
+  table
+  {
+      font-size: 11px;
+      font-family: arial
+  }
+
+  h1,h2,h3,h4,a {
+    background:transparent;
+	  margin-top: .2em;
+	  margin-bottom: .2em;
+  }
+  h1 {
+    color:#336666;
+  }
+  h2 {
+    color:#669966;
+  }
+  h3 {
+    color:#999966;
+  }
+  h4 {
+    color:#669999;
+  }
+
+  a {
+    text-align:left;
+  }
+  a:link {
+    color:#999966;
+  }
+  a:visited {
+    color:#669999;
+  }
+  a:hover {
+    color:#fffff0;background:#669999;
+  }
+  a:active {
+    color:#cc0033;
+  }
+
+  label {
+    float: left;
+  }
+
+  select {
+    margin-left: .5em;
+    padding: .2em;
+    width: 180px;
+  }
+
+  .narrowHeading {
+    margin-top: .2em;
+    margin-bottom: .2em;
+    font-weight:bold;
+    color: red;
+  }
+
+  #container
+  {
+  width: 98%;
+  margin: 2px auto;
+  }
+
+  #top
+  {
+  padding: .2em;
+  background-color: #ddd;
+  border-bottom: 1px solid gray;
+  }
+
+  #leftside
+  {
+  float: left;
+  width: 200px;
+  margin: 0;
+  padding: 1em;
+  }
+
+  #rightSide
+  {
+  margin-left: 220px;
+  border-left: 1px solid gray;
+  padding: 1em;
+  }
+
+  #top h3
+  {
+  padding: 0;
+  margin: 0;
+  color: #FF0000;
+  }
+
+  #rightSide h3
+  {
+  padding: 0;
+  margin: 0;
+  color: #FF0000;
+  }
+
+  #leftside h3
+  {
+  padding: 0;
+  margin: 0;
+  color: #FF0000;
+  }
+
+  #footer
+  {
+  clear: both;
+  margin: 0;
+  height: 100px;
+  padding: .5em;
+  color: #333;
+  background-color: #ddd;
+  border-top: 1px solid gray;
+  }
+
+  #boxed
+  {
+  background-color: #ddd;
+  border: 1px solid gray;
+  padding: .2em;
+  }
+
+  #highlight
+  {
+  background-color: #FFFF80;
+  border: 1px solid red;
+  padding: .2em;
+  }
+
+	.notesHeading {
+	  color: red;
+    font-weight:bold;
+	}
+
+  #navigation a
+  {
+    color:  black;
+    background: #fb0 url("images/tab-orange-left2.gif") left top no-repeat;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+
+  #navigation a span
+  {
+    background: url("images/tab-orange-right2.gif") right top no-repeat;
+    padding-right: 10px
+  }
+
+  #navigation a:hover
+  {
+    color: #ffffff;
+    background: #26a url("images/tab-blue-left2.gif") left top no-repeat;
+    text-decoration: none;
+    padding-left: 10px
+  }
+
+  #navigation a:hover span
+  {
+    background: url("images/tab-blue-right2.gif") right top no-repeat;
+    padding-right: 10px
+  }
+
+  #navigation a, #navigation a span
+  {
+    display: block;
+    float: left
+  }
+
+  /* Commented backslash hack hides rule from IE5-Mac \*/
+  #navigation a, #navigation a span
+  {
+   float: none
+  }
+  /* End IE5-Mac hack */
+
+  #navigation
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0
+  }
+
+  #navigation li
+  {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0
+  }
+
+  #navigation li.menu {
+    text-align: center;
+    background-color: #FFCE0F;
+  }
+
+  #navigation li.selMenu {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    background-color: #205394;
+  }
+
+  #formlabel {
+    float: left;
+    width: 120px;
+    font-weight: bold;
+  }
+
+  input.text, textarea {
+    width: 180px;
+    margin-bottom: 5px;
+  }
+</style>

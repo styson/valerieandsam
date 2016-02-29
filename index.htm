@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valerie and Sam</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div id="navbar"></div>
+   <div class="container">
+      <div id="main" class="hero-unit"></div>
+      <hr>
+   </div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+   $("#navbar").load("menu.htm", function() {
+      var tag = $("#navbar .dropdown-menu li.active a").data("tag");
+      $("#main").load(tag+".htm");
+   });
+
+   $("#navbar .dropdown-menu li").click(function() {
+      var tag = $(this).data("tag");
+      $("#main").load(tag+".htm");
+   });
+});
+</script>
+</body>
+</html>
+
+<!--
+
+   -- Example row of columns --
+   <div class="row">
+     <div class="span4">
+       <h2>Heading</h2>
+       <p>text</p>
+       <p><a class="btn" href="#">View details &raquo;</a></p>
+     </div>
+     <div class="span4">
+       <h2>Heading</h2>
+       <p>text</p>
+       <p><a class="btn" href="#">View details &raquo;</a></p>
+    </div>
+     <div class="span4">
+       <h2>Heading</h2>
+       <p>text</p>
+       <p><a class="btn" href="#">View details &raquo;</a></p>
+     </div>
+   </div>
+
+      <footer>
+        <p>&copy; Sam Tyson 2014</p>
+      </footer>
+
+-->

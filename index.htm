@@ -21,13 +21,13 @@ $(document).ready(function() {
   $("#navbar").load("menu.htm", function() {
     var tag = $("#navbar .dropdown-menu li.active a").data("tag");
     $("#main").load(tag+".htm");
-  });
 
-  $("#navbar .dropdown-menu li a").on("click", function() {
-    var tag = $(this).data("tag");
-    console.log(tag);
-    $("#main").load(tag+".htm");
-    return false;
+    $("#navbar .dropdown-menu li a").on("click", function() {
+      var tag = $(this).data("tag");
+      console.log(tag);
+      $("#main").load(tag+".htm");
+      return false;
+    });
   });
 });
 </script>

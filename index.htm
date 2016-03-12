@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
 <title>Valerie and Sam</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='css/bootstrap.min.css' rel='stylesheet'>
 </head>
 <body>
-<div id="navbar"></div>
-<div class="container">
-  <div id="main" class="hero-unit"></div>
+<div id='navbar'></div>
+<div class='container'>
+  <div id='main' class='hero-unit'></div>
   <hr>
 </div>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src='js/jquery.js'></script>
+<script src='js/bootstrap.min.js'></script>
 <script>
 $(document).ready(function() {
-  $("#navbar").load("menu.htm", function() {
-    var tag = $("#navbar .dropdown-menu li.active a").data("tag");
-    $("#main").load(tag+".htm");
+  $('#navbar').load('menu.htm', function() {
+    var tag = $('#navbar .dropdown-menu li.active a').data('tag');
+    $('#main').load(tag+'.htm');
 
-    $("#navbar .dropdown-menu li a").on("click", function() {
-      var tag = $(this).data("tag");
+    $('#navbar .dropdown-menu li a').on('click', function() {
+
+      $('li.active').removeClass('active');
+      $(this).parent().addClass('active');
+
+      var $parentUL = $(this).parents('ul');
+      if($parentUL.hasClass('photos')) {
+        var photos = $(this).data('tag');
+        $('#main').load('photos.htm');
+        $('#main').append('<h3>'+photos+'</h3>')
+      }
+
+      var tag = $(this).data('tag');
       console.log(tag);
-      $("#main").load(tag+".htm");
+      //$('#main').load(tag+'.htm');
       return false;
     });
   });

@@ -23,10 +23,11 @@ $(document).ready(function() {
     $("#main").load(tag+".htm");
   });
 
-  $("#navbar .dropdown-menu li").on("click", function() {
+  $("#navbar .dropdown-menu li a").on("click", function() {
     var tag = $(this).data("tag");
     console.log(tag);
     $("#main").load(tag+".htm");
+    return false;
   });
 });
 </script>
